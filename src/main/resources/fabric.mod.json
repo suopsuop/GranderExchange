@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "granderexchange",
+  "version": "${version}",
+  "name": "GranderExchange",
+  "description": "The Grand Exchange, but grander! I have never played Runescape! Please don't sue me!",
+  "authors": [
+    "suop"
+  ],
+  "contact": {
+    "website": "suopsuop.github.io"
+  },
+  "license": "MIT",
+  "icon": "assets/granderexchange/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.suopsuop.granderexchange.client.GranderexchangeClient"
+    ],
+    "main": [
+      "io.github.suopsuop.granderexchange.Granderexchange"
+    ]
+  },
+  "mixins": [
+    "granderexchange.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
